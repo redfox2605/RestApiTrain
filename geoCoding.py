@@ -4,7 +4,7 @@ import json
 
 
 def getGeocoderLocation(inputString):
-	googleApiKey = "AIzaSyAIrQBRrd5Xrfb_ngtYv4aOWs5zCf8CnWI"
+	googleApiKey = "YOURKEY"
 	locationString = inputString.replace(" ","+")
 	url =  "https://maps.googleapis.com/maps/api/geocode/json?address={0}&key={1}".format(locationString,googleApiKey)
 	h = httplib2.Http()
